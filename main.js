@@ -4,6 +4,7 @@ const opzioni = {
     data: function () {
         return {
             message: 'ToDO list',
+            newTodo: '',
             todoList: [
                 {
                     text: 'andare in palestra',
@@ -29,13 +30,23 @@ const opzioni = {
                     text: 'comprare i giochi per ps5',
                     done: false
                 }
-            ]
+            ],
+            
         }
     },
     methods: {
         deleteBtn(index) {
             this.todoList.splice(index, 1);
-        }      
+        },
+        addBtn()  {
+            let todoNew = {
+                text: this.newTodo,
+                done: false
+            };
+            
+            this.todoList.push(todoNew);
+            this.newTodo = '';
+        }     
     }
 };
 

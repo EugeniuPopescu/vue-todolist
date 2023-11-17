@@ -27,7 +27,12 @@
                         {{ item.text }}
                     </p>
 
-                    
+                    <div class="col-3">
+                        <div class="input-group mb-3">
+                            <input @keyup.enter="addBtn" v-model="newTodo" type="text" class="form-control" placeholder="Add ToDo.." aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button @click="addBtn" class="btn btn-outline-success" type="button" id="button-addon2">Add</button>
+                        </div>
+                    </div>
                     
                 </div>
             </body>
