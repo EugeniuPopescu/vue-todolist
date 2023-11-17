@@ -15,7 +15,7 @@ const opzioni = {
                 },
                 {
                     text: 'studiare VUE',
-                    done: false
+                    done: true
                 },
                 {
                     text: 'preparare i pasti',
@@ -23,7 +23,7 @@ const opzioni = {
                 },
                 {
                     text: 'fare la lavatrice',
-                    done: false
+                    done: true
                 },
                 {
                     text: 'comprare i giochi per ps5',
@@ -33,7 +33,7 @@ const opzioni = {
         }
     },
    methods: {
-        
+
    }
 };
 

@@ -22,7 +22,7 @@
             <body>
                 <div class="container">
                     <ul>
-                        <li v-for="(item, i) in todoList" :key="i" >{{ item.text }}</li>
+                        <li v-for="(item, i) in todoList" :key="i" :class="{ completed: item.done}">{{ item.text }}</li>
                     </ul>
                 </div>
             </body>
