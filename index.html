@@ -21,9 +21,14 @@
 
             <body>
                 <div class="container">
-                    <ul>
-                        <li v-for="(item, i) in todoList" :key="i" :class="{ completed: item.done}">{{ item.text }}</li>
-                    </ul>
+                  
+                    <p v-for="(item, i) in todoList" :key="i" :class="{ completed: item.done}">
+                        <button @click="deleteBtn(i)" type="button" class="btn btn-outline-danger me-3">x</button>
+                        {{ item.text }}
+                    </p>
+
+                    
+                    
                 </div>
             </body>
             

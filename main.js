@@ -32,9 +32,11 @@ const opzioni = {
             ]
         }
     },
-   methods: {
-
-   }
+    methods: {
+        deleteBtn(index) {
+            this.todoList.splice(index, 1);
+        }      
+    }
 };
 
 createApp(opzioni).mount('#app')
